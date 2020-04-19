@@ -1,0 +1,12 @@
+language: c
+sudo: false
+before_install:
+  - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
+install:
+  - arduino --install-library "AdafruitIO"
+  - arduino --install-library "WiFi101OTA"
+  - arduino --install-library "WiFi101"
+  - arduino --install-library "Adafruit_BME680"
+script:
+  - arduino --verify --board arduino:samd:arduino_zero_native $PWD/mqttBME680/mqttBME680.ino
+  
