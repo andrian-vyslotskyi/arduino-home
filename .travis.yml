@@ -2,10 +2,6 @@ language: c
 git:
   depth: false
   quiet: true
-cache:
-  directories:
-    - ~/arduino_ide
-    - ~/.arduino15/packages/
 addons:
   apt:
     sources:
