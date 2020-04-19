@@ -22,5 +22,6 @@ install:
   - arduino --install-library "WiFi101"
   - arduino --install-library "Adafruit Unified Sensor"
   - arduino --install-library "Adafruit BME680 Library"
+  - arduino --install-library "RTCZero"
 script:
   - arduino --verify --board arduino:samd:arduino_zero_native $PWD/mqttBME680/mqttBME680.ino
