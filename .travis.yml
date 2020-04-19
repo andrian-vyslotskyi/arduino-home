@@ -21,6 +21,7 @@ before_install:
 
 install:
   - arduino --install-library "Adafruit IO Arduino"
+  - arduino --install-library "Arduino Low Power"
   - arduino --install-library "WiFi101OTA"
   - arduino --install-library "WiFi101"
   - arduino --install-library "Adafruit Unified Sensor"
